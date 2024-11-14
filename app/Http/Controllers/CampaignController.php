@@ -129,6 +129,7 @@ class CampaignController extends Controller
 
         if ($request->has('order')) {
             $columnIndex = $request->order[0]['column'];
+            $columnIndex > 1 ? $columnIndex--:$columnIndex;
             $columnName = $columnsForOrderBy[$columnIndex];
             $columnSortOrder = $request->order[0]['dir']; // 'asc' or 'desc'
             $query->orderByRaw("$columnName $columnSortOrder");
@@ -183,6 +184,7 @@ class CampaignController extends Controller
 
         if ($request->has('order')) {
             $columnIndex = $request->order[0]['column'];
+            $columnIndex > 1 ? $columnIndex--:$columnIndex;
             $columnName = $columnsForOrderBy[$columnIndex];
             $columnSortOrder = $request->order[0]['dir']; // 'asc' or 'desc'
             $query->orderByRaw("$columnName $columnSortOrder");

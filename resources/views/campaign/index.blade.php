@@ -136,7 +136,7 @@
                     [1, 'desc']
                 ], // Default ordering by total_revenue
                 columnDefs: [
-                    { targets: [2, 3], orderable: false } // Disable sorting for these columns
+                    { targets: [3, 4], orderable: false } // Disable sorting for these columns
                 ]
             });
         });
