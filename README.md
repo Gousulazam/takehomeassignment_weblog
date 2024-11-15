@@ -42,6 +42,12 @@ broken down by utm_term.
 
 # command to run project
 1.php artisan migrate --seed 
+---
+
 2.php artisan app:import-stats "stats_2024_03_31.csv" // for importing data from csv file
+---
+
 3.php artisan app:import-stats "stats_2024_04_01.csv" // for importing data from csv file
+---
+
 4.php artisan serve
